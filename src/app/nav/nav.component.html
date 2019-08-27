@@ -1,3 +1,31 @@
 <mat-toolbar color="primary">
-  <span>Cervelat</span>
+  <mat-toolbar-row id="toolbar">
+    <a routerLink="/" id="home-link">
+      Cervelat
+    </a>
+
+    <span id="links" *ngIf="!mobile">
+    <a routerLink="/silvan" class="nav-link">Silvan</a>
+    <a routerLink="/lars" class="nav-link">Lars</a>
+    <a routerLink="/youri" class="nav-link">Youri</a>
+    </span>
+
+    <button mat-stroked-button (click)="toggleMenu()" *ngIf="mobile">
+      <mat-icon [@rotateIcon]="menu ? 'open' : 'closed'">menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+
+
+  <mat-toolbar-row *ngIf="menu && mobile">
+    <a routerLink="silvan" class="nav-link">Silvan</a>
+  </mat-toolbar-row>
+  <mat-toolbar-row *ngIf="menu && mobile">
+    <a routerLink="lars" class="nav-link">Lars</a>
+  </mat-toolbar-row>
+  <mat-toolbar-row *ngIf="menu && mobile">
+    <a routerLink="Youri" class="nav-link">Youri</a>
+  </mat-toolbar-row>
+
+
 </mat-toolbar>
+

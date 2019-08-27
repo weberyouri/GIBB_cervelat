@@ -1,0 +1,19 @@
+#toolbar{
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+#home-link {
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 3em;
+  margin: 20px 15px 20px 0;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Amatic SC', cursive;
+  margin: 0 20px;
+  color: white;
+}
