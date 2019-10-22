@@ -1,13 +1,4 @@
-import {
-  AfterViewInit,
-  ChangeDetectorRef,
-  Component,
-  ElementRef,
-  Input,
-  OnInit,
-  Renderer2,
-  ViewEncapsulation
-} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-image-slider',
@@ -22,7 +13,7 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
   // tslint:disable-next-line:no-input-rename
   @Input('after-img') afterImgSrc;
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
+  constructor(private elementRef: ElementRef) {
   }
 
   ngOnInit() {
