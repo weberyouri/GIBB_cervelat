@@ -20,6 +20,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     LarsComponent,
     SilvanComponent,
     YouriComponent,
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule,
