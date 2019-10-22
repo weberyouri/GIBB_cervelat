@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { LarsComponent } from './lars/lars.component';
 import { SilvanComponent } from './silvan/silvan.component';
 import { YouriComponent } from './youri/youri.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { YouriComponent } from './youri/youri.component';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
