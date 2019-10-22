@@ -1,4 +1,13 @@
-import {AfterViewInit, ChangeDetectorRef, Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  Renderer2,
+  ViewEncapsulation
+} from '@angular/core';
 
 @Component({
   selector: 'app-image-slider',
@@ -13,26 +22,22 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
   // tslint:disable-next-line:no-input-rename
   @Input('after-img') afterImgSrc;
 
-  constructor(private changeDetector: ChangeDetectorRef) {
+  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   }
 
   ngOnInit() {
-    this.initComparisons();
-    this.changeDetector.detectChanges();
+    this.initComparison();
   }
 
   ngAfterViewInit() {
 
   }
 
-  initComparisons() {
+  initComparison() {
     let x;
     let i;
-    /* Find all elements with an "overlay" class: */
-    x = document.getElementsByClassName('img-comp-overlay');
+    x = this.elementRef.nativeElement.querySelectorAll('.img-comp-overlay');
     for (i = 0; i < x.length; i++) {
-      /* Once for each "overlay" element:
-      pass the "overlay" element as a parameter when executing the compareImages function: */
       compareImages(x[i]);
     }
 
