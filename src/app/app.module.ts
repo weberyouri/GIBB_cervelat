@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { LarsComponent } from './lars/lars.component';
 import { SilvanComponent } from './silvan/silvan.component';
 import { YouriComponent } from './youri/youri.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { YouriComponent } from './youri/youri.component';
     LarsComponent,
     SilvanComponent,
     YouriComponent,
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule,
