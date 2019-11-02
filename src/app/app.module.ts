@@ -11,6 +11,7 @@ import { LarsComponent } from './lars/lars.component';
 import { SilvanComponent } from './silvan/silvan.component';
 import { YouriComponent } from './youri/youri.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import {PdfViewerModule} from "ng2-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
