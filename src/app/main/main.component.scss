@@ -1,0 +1,29 @@
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  width: 90%;
+  margin: 15px auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+p {
+  width: 80%;
+  text-align: center;
+  font-family: Arial, cursive;
+  margin: 0 auto;
+}
+#stream {
+  margin: 15px auto;
+  width: 620px;
+  display: block;
+}
+
+@media screen and (max-width: 620px) {
+  #stream {
+    width: 100%;
+  }
+
+  p, h1 {
+    width: 100%;
+  }
+}
