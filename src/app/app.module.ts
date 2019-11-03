@@ -8,19 +8,19 @@ import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/materia
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MainComponent } from './main/main.component';
 import { LarsComponent } from './lars/lars.component';
-import { SilvanComponent } from './silvan/silvan.component';
 import { YouriComponent } from './youri/youri.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
-import {PdfViewerModule} from "ng2-pdf-viewer";
+import {PdfViewerModule} from 'ng2-pdf-viewer';
+import {SilvanComponent} from './silvan/silvan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     MainComponent,
-    LarsComponent,
     SilvanComponent,
+    LarsComponent,
     YouriComponent,
     ImageSliderComponent,
   ],
