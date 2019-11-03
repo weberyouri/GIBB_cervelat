@@ -2,6 +2,7 @@
   width: 800px;
   margin: 0 auto;
 }
+
 .pdf {
   float: left;
   width: 30%;
@@ -16,13 +17,14 @@ h1 {
   text-align: center;
   border-bottom: 1px solid black;
 }
+
 p {
   width: 800px;
   font-family: Arial, cursive;
   margin: 10px auto;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .slider {
     width: 400px;
   }
@@ -33,4 +35,8 @@ p {
     width: 100%;
     float: none;
   }
+}
+
+.bold {
+  font-weight: bold;
 }

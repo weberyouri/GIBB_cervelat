@@ -6,24 +6,39 @@ h1 {
   text-align: center;
   border-bottom: 1px solid black;
 }
-p {
-  width: 80%;
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
   text-align: center;
-  font-family: Arial, cursive;
-  margin: 0 auto;
-}
-#stream {
   margin: 15px auto;
+  width: 90%;
+}
+
+p {
+  width: 800px;
+  font-family: Arial, cursive;
+  margin: 10px auto;
+}
+
+.video {
   width: 620px;
   display: block;
 }
 
 @media screen and (max-width: 620px) {
-  #stream {
+  .video {
     width: 100%;
   }
 
   p, h1 {
     width: 100%;
+    display: block;
   }
+}
+
+#stream {
+  margin: 15px auto;
+  width: 620px;
+  display: block;
 }
