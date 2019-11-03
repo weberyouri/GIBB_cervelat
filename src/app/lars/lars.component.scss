@@ -23,6 +23,14 @@ p {
   font-family: Arial, cursive;
   margin: 10px auto;
 }
+.w-25{
+  margin: 15px 4%;
+  width: 25%;
+}
+
+.w-100{
+  width:100vw;
+}
 
 @media screen and (max-width: 800px) {
   .slider {
@@ -35,16 +43,13 @@ p {
     width: 100%;
     float: none;
   }
+  .w-25{
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .bold {
   font-weight: bold;
 }
-.w-25{
-  margin: 15px 4%;
-  width: 25%;
-}
 
-.w-100{
-  width:100vw;
-}
