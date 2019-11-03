@@ -1,4 +1,13 @@
-import {AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewEncapsulation} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnChanges,
+  OnInit,
+  ViewEncapsulation
+} from '@angular/core';
 
 @Component({
   selector: 'app-image-slider',
@@ -13,15 +22,28 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
   // tslint:disable-next-line:no-input-rename
   @Input('after-img') afterImgSrc;
 
+  mobile = false;
+
   constructor(private elementRef: ElementRef) {
   }
 
-  ngOnInit() {
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (window.innerWidth >= 800) {
+      this.mobile = false;
+    } else {
+      this.mobile = true;
+    }
+    this.removeComparison();
     this.initComparison();
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
+    this.onResize();
+  }
 
+  ngAfterViewInit() {
+    this.initComparison();
   }
 
   initComparison() {
@@ -117,5 +139,13 @@ export class ImageSliderComponent implements OnInit, AfterViewInit {
         slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + 'px';
       }
     }
+  }
+
+  removeComparison() {
+    const slider = this.elementRef.nativeElement.querySelector('.img-comp-slider');
+    if (slider) {
+      slider.className = '.hidden';
+    }
+
   }
 }

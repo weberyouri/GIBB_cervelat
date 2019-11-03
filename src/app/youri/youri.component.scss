@@ -1,0 +1,56 @@
+.slider {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.pdf {
+  float: left;
+  width: 30%;
+  margin: 1%;
+}
+
+.w-25{
+  margin: 15px 4%;
+  width: 25%;
+}
+
+.w-100{
+  width:100vw;
+}
+
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  width: 90%;
+  margin: 15px auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+p {
+  width: 800px;
+  font-family: Arial, cursive;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .slider {
+    width: 400px;
+  }
+  p, h1 {
+    width: 400px;
+  }
+  .pdf {
+    width: 100%;
+    float: none;
+  }
+  .w-25{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}

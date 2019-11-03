@@ -11,6 +11,8 @@ import { LarsComponent } from './lars/lars.component';
 import { SilvanComponent } from './silvan/silvan.component';
 import { YouriComponent } from './youri/youri.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
+import {PdfViewerModule} from "ng2-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
